@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>z-index.html</title>
+    <style>
+        div.parent {
+            position: relative;
+            width: 400px;
+            height: 200px;
+            background: royalblue;
+        } 
+
+        div.child1 {
+            position: absolute;
+            top: 80px;
+            right: 150px;
+            width: 200px;
+            height: 100px;
+            background: salmon;
+            z-index: 2; /*아주 중요한거일수록 수치를 999 라고 둔다.*/
+        }
+
+        div.child2 {
+            position: absolute;
+            top: 80px;
+            right: 100px;
+            width: 200px;
+            height: 100px;
+            background: rgb(170, 245, 152);
+            z-index: 1;
+            /* z-index 는 수치가 낮을수록 뒤에 깔림 (먼저 깔리는거임) */
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="child1">1</div>
+        <div class="child2">2</div>
+    </div>
+</body>
+</html>

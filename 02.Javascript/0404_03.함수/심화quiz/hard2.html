@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hard2.html</title>
+</head>
+<body>
+    <script>
+        const a = Number(prompt("숫자를 입력하시오."));
+        const b = Number(prompt("숫자를 입력하시오."));
+
+        const add=(sum) => a + b
+        const sub=(minus) => a - b
+        const division=(over) => a / b
+        const multiple=(multi) => a * b
+
+        let number = add (a, b);
+        alert(`두 값의 더하면 ${number}`);
+
+        let number2 = sub (a, b);
+        alert(`두 값을 빼면 ${number2}`);
+
+        let number3 = division (a, b);
+        alert(`두 값을 나누면 ${number3}`);
+
+        let number4 = multiple (a, b);
+        alert(`두 값을 곱하면 ${number4}`);
+    </script>
+</body>
+</html>

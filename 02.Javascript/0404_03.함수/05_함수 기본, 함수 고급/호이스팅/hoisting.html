@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //비익명함수 실행
+        a();
+
+        //비익명함수 선언
+        function a() {
+            document.write("haha");
+        }
+
+        /*안됨!*/
+
+        //익명함수 실행
+        b();
+        
+        //익명함수 선언
+        const b = function() {
+            document.write("byebye");
+        }
+        
+        //비익명함수는 먼저 실행하고 아래에서 함수를 선언해도 됨.
+        //익명 함수는 안됨.
+    </script>
+</body>
+</html>

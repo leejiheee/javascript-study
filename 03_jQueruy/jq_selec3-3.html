@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jq_selec3-3.html</title>
+    <style>
+        .aqua{background-color:#0ff;}
+        .red{background-color:#f00;}
+        .green{background-color:#0f0;}
+        .yellow{background-color:#ff0;}
+    </style>
+</head>
+<body>
+    <p id="p1">내용1</p>
+	<p id="p2" class="red">내용2</p>
+	<p id="p3">내용3</p>
+	<p id="p4" class="green">내용4</p>
+	<p id="p5" class="yellow">내용5</p>
+	<p id="p6"></p>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+    <script>
+        $(function(){
+            $('#p1').addClass('aqua'); //class 추가
+            $('#p2').removeClass('red'); //class 지우기
+            
+            $('#p3').toggleClass('green');
+            $('#p4').toggleClass('green'); //있으면 지우고 없으면 만든다.
+
+            var result = $('#p4').hasClass('yellow');
+            console.log(result); // #p4가 yellow라는 class를 가지고 있는가?
+        })
+    </script>
+</body>
+</html>

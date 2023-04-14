@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>string.html</title>
+</head>
+<body>
+    <script>
+        let num = 1;
+        console.log(String(num));
+
+        //문장의 양 끝 공백을 없애줌
+        let str = '     안녕하세요      '
+        console.log(str.trim());
+
+        //spirit: 문자열을 특정 기호를 기준으로 자르기
+        let str2 = '배, 사과, 토마토, 포도';
+        let arr = str2.split(',');
+        console.log(arr);
+
+        //글자수를 알려줌 (공백포함)
+        let str3 = '자바스크립트 시간입니다.'
+        console.log("공백을 포함한 글자수: " + str3.length);
+        
+        //문자의 몇번째 글자를 알 수 있음
+        console.log("문자열을 배열처럼 사용하기:" + str3[3]);
+
+        //문장에서 단어가 몇번째 인덱스에서 시작하는지 알 수 있음
+        console.log("indexOf 자바: " + str3.indexOf('자바'));
+        console.log("indexOf 시간: " + str3.indexOf('시간'));
+        console.log("indexOf 없음: " + str3.indexOf('없음')); //존재하지 않으면 -1로 출력됨
+
+        
+        
+        //검색기능 예시
+        let search = '이젠'
+
+        if (str3.indexOf(search) == -1) {
+            alert('해당 검색어가 없습니다.')
+        } else {
+            //검색 결과 보여주기
+        }
+    </script>
+</body>
+</html>

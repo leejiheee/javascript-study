@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>absolute1-1.html</title>
+    <style>
+    .grend {
+        position: relative;
+        width: 800px;
+        height: 400px;
+        top: 100px;
+        background-color: yellow;
+    }
+     
+     .parent {
+            width: 400px;
+            height: 200px;
+            background-color: royalblue;
+        }
+
+        .child1 {
+            /* absolute는 relative를 기준으로 위치를 잡는다. */
+            position: absolute;
+            top: 80px;
+            right: 150px;
+            width: 200px;
+            height: 100px;
+            background-color: salmon;
+        }
+
+        .child2 {
+            position: absolute;
+            top: 80px;
+            right: 100px;
+            width: 200px;
+            height: 100px;
+            background-color: yellowgreen;
+        }
+    </style>
+</head>
+<body>
+    <div class="grend">
+        <div class="parent">
+            <div class="child1">1</div>
+            <div class="child2">2</div>
+        </div>
+    </div>
+</body>
+</html>

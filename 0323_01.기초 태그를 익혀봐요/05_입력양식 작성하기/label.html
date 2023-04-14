@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 입력태그 넣으려면 form은 필수 -->
+    <form id="main-form">
+        <fieldset>
+            <legend>회원가입</legend>
+            <!-- input은 입력창 / label은 input이랑 세트 / 
+                label에 for은 어떤걸 위한건지 지정해주는 개념 (label을 누르면 포커싱이 잡힘)
+                 / id는 input에 이름을 붙혀주는 개념 (모든태그에 가능, 중복불가) -->
+            <label for="user-id">아이디(6자 이상)</label>
+            <input type="text" id="user-id" size="10" maxlength="10">
+            <label for="user-pw">비밀번호</label>
+            <input type="password" id="user-pw" size="10" maxlength="5">
+            <!-- submit은 버튼(전송) submit이랑 value는 세트-->
+            <input type="submit" value="로그인">
+        </fieldset>
+    </form>
+</body>
+</html>

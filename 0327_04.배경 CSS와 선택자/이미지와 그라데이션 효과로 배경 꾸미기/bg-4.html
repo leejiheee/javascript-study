@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bg-4.html</title>
+    <style>
+        #container {
+            width: 1100px; /*container로 정렬 (이걸 정해줌으로서 아래 float left를 해도 1100px 사이즈 안에서 해결) */
+            margin: 50px auto;
+        }
+
+        .box {
+            float: left;
+            border: 1px solid #222;
+            width: 300px;
+            height: 300px;
+            margin: 20px;
+            background: url(./images/bg4.jpg);
+            background-repeat: no-repeat;
+            background-position: left top;
+        }
+
+        #bg1 {background-size: auto;}
+        #bg2 {background-size: 200px;} /*너비를 200px로 잡고 세로는 알아서 맞춤*/
+        #bg3 {background-size: 50%;} /*너비를 50%로 잡고 세로는 알아서 맞춤*/
+        #bg4 {background-size: 100% 100%;}
+        #bg5 {background-size: contain;} /*비율을 맞춰서 넣음*/
+        #bg6 {background-size: cover;} /*영역을 꽉 채워서 넣음*/
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div class="box" id="bg1"></div>
+        <div class="box" id="bg2"></div>
+        <div class="box" id="bg3"></div>
+        <div class="box" id="bg4"></div>
+        <div class="box" id="bg5"></div>
+        <div class="box" id="bg6"></div>
+      </div>
+</body>
+</html>

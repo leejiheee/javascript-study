@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2-3.html</title>
+</head>
+<body>
+    <script>
+        const a = Number(prompt("정수를 입력하시오."));
+        const b = Number(prompt("정수를 입력하시오."));
+        const c = Number(prompt("정수를 입력하시오."));
+
+        //합계
+        let sum = (a + b + c);
+        alert (`합계는 ${sum}`);
+
+        //평균
+        let average = ((a + b + c)/3);
+        alert (`평균은 ${average}`);
+
+        //최대값
+        if(a > b && a > c) {
+            alert (`최대값은 ${a}`);
+        } else if (b > a && b > c) {
+            alert (`최대값은 ${b}`);
+        } else if (c > a && c > b) {
+            alert (`최대값은 ${c}`);
+        }
+
+        //최소값
+        if(a < b && a < c) {
+            alert (`최소값은 ${a}`);
+        } else if (b < a && b < c) {
+            alert (`최소값은 ${b}`);
+        } else if (c < a && c < b) {
+            alert (`최소값은 ${c}`);
+        }
+
+
+        
+
+        
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <script>
+      const testarray = [1, 2, 3, 4];
+      function max (array) {
+        let output = array[0];
+
+        for(const item of array) {
+          if(output < item) {
+            output = item;
+          }
+        }
+          return output;
+      };
+
+      console.log(`최댓값: ${max(testarray)}`);
+
+
+
+    </script>
+  </head>
+  <body></body>
+</html>

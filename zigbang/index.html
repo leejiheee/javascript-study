@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beyond Home, Zigbang</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- 폰트 어썸 -->
+    <link rel="stylesheet" href="./fontawesome-free-6.4.0-web/css/fontawesome.css">
+    <link rel="stylesheet" href="./fontawesome-free-6.4.0-web/css/brands.css">
+    <link rel="stylesheet" href="./fontawesome-free-6.4.0-web/css/solid.css">
+    <!-- 부트스트랩 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="wrap">
+        <header>
+            <nav class="nav">
+                <a href="./index.html" class="nav__logo">
+                    <img src="./images/logo.png" alt="직방로고" width="200">
+                </a>
+                <div class="header-left">
+                    <ul class="nav__menu">
+                        <li>
+                            <a href="#">
+                                <span class="w1">아파트</span>
+                                <span class="w2">매매/월세/신축분양</span>
+                            </a>
+                            <ul class="sub-menu">
+                                <li><a href="#">매매/전월세</a></li>
+                                <li><a href="#">신축분양</a></li>
+                                <li><a href="#">인구흐름</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="w1">빌라, 투룸+</span>
+                                <span class="w2">신축분양/매매/전월세</span>
+                            </a>
+                            <ul class="sub-menu">
+                                <li><a href="#">빌라, 투룸 찾기</a></li>
+                                <li><a href="#">찜한 매물</a></li>
+                                <li><a href="#">빌라 내놓기(전월세만)</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="w1">원룸</span>
+                                <span class="w2">전월세</span>
+                            </a>
+                            <ul class="sub-menu">
+                                <li><a href="#">방찾기</a></li>
+                                <li><a href="#">찜한 매물</a></li>
+                                <li><a href="#">방 내놓기(전월세만)</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="w1">오피스텔</span>
+                                <span class="w2">도시형생활주택/전월세</span>
+                            </a>
+                            <ul class="sub-menu">
+                                <li><a href="#">오피스텔 찾기</a></li>
+                                <li><a href="#">찜한 매물</a></li>
+                                <li><a href="#">오피스텔 내놓기(전월세만)</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="w1">창업/사무실</span>
+                                <span class="w2">임대/매매</span>
+                            </a>
+                            <ul class="sub-menu">
+                                <li><a href="#">상가/점포</a></li>
+                                <li><a href="#">사무실</a></li>
+                                <li><a href="#">공유오피스</a></li>
+                                <li><a href="#">찜한 매물</a></li>
+                                <li><a href="#">상가/사무실 내놓기</a></li>
+                            </ul>                        
+                        </li>
+                    </ul>
+                </div>
+                <div class="header-right">
+                    <div class="btn-login">
+                        <button type="button" class="header-btn">로그인 및 회원가입</button>
+                    </div>
+                    <div class="header-right">
+                        <a href="#" class="header-img"><img src="https://s.zigbang.com/v1/web/main/ceo_ad_img_new.png" alt="중개사무소 가입 및 광고문의"></a>
+                    </div>
+                </div>
+            </nav>     
+        </header>
+        <main class="main">
+            <div class="banner-1">
+                <div class="banner-1__text">
+                    <div>어떤 집을 찾고 계세요?</div>
+                </div>
+                <div class="banner-2">
+                    <ul class="nav nav-pills">
+                        <li class="nav-item">
+                        <a class="nav-link active" href="#">아파트</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="#">빌라,투룸+</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="#">원룸</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="#">오피스텔</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" style="white-space: nowrap;">창업/사무실</a>
+                        </li>
+                    </ul>
+                    <div class="input-group mb-3">
+                        <input name="banner" type="text" class="form-control" placeholder="원하시는 지역명, 지하철역, 단지명(아파트명)을 입력해주세요" aria-label="Recipient's username" aria-describedby="basic-addon2" title="search" id="main-search">
+                        <label for="main-search"></label>
+                        <span class="input-group-text" id="basic-addon2"><i class="fa-solid fa-magnifying-glass" style="color: #ffffff; font-size: 24px; padding-left: 12px;"></i></span>
+                      </div>
+                </div>
+            </div>
+            <div class="contents-area">
+                <div class="contents">
+                    <div class="contents__hi">
+                        <div>소개할게요</div>
+                        <div><img src="./images/banner1.jpg" alt="천안 부성지구 한라 비발디"></div>
+                    </div>
+                    <div class="contents__news">
+                        <div class="news__title">
+                            <div>
+                                <div style="width: 200px; font-family: Spoqa Han Sans;" >뉴스</div>
+                            </div>
+                                <div class="title__right">
+                                    <div>더보기</div>
+                                </div>
+                            </div>
+                        <div class="news__list">
+                            <div>
+                                <div>
+                                    <p>직방이 만드는 새로운 혁신의 주거 혁신</p>
+                                </div>
+                                <div>
+                                    <p>4월 분양, 전년 동기 대비 1만 2천여 세대 늘어나</p>
+                                </div>
+                                <div>
+                                    <p>나의 공간을 내 취향대로</p>
+                                </div>
+                                <div>
+                                    <p>'방 3개짜리 원룸' 나온다</p>
+                                </div>
+                                <div>
+                                    <p>VR로 집구경 미리 해보고 산다</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contents__notice">
+                        <div class="notice__title">
+                            <div>
+                                <div style="width: 200px; font-family: Spoqa Han Sans;">공지사항</div>
+                            </div>
+                            <div class="title__right">
+                                <div>더보기</div>
+                            </div>
+                        </div>
+                        <div class="notice__list">
+                            <div>
+                                <div>
+                                    <p>[공지] 직방 서비스 정상화 안내</p>
+                                </div>
+                                <div>
+                                    <p>[공지] 직방 위치기반서비스 이용약관(2022/06/08) 개정 안내</p>
+                                </div>
+                                <div>
+                                    <p>[공지] 직방 Internet Exploler 11 지원 종료 안내</p>
+                                </div>
+                                <div>
+                                    <p>[공지] 직방 개인정보처리방침 (2021/12/14) 개정안내</p>
+                                </div>
+                                <div>
+                                    <p>[공지] 직방 개인정보처리방침 (2021/06/07) 개정안내</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="app-area">
+                <div class="app__contents">
+                    <img src="./images/phone.png" alt="직방앱다운">
+                    <div class="app__right">
+                        <h2>직방앱을 다운받으세요!</h2>
+                        <div class="app__btn">
+                            <div></div>
+                            <div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+
+        </main>
+        <footer>
+            <div class="footer-area">
+                <p>
+                    <a href="#">회사소개</a> |
+                    <a href="#">채용정보</a> |
+                    <a href="#">이용약관</a> |
+                    <a href="#" style="font-weight: bold;">개인정보 처리방침</a> |
+                    <a href="#">위치기반 서비스 이용약관</a> |
+                    <a href="#">중개사 서비스 바로가기</a>
+                </p>
+                <div class="footer-bottom">
+                    상호 : (주)직방  |  대표 : 안성우  |  사업자등록번호: 120-87-61559 <br>
+                    주소 : 서울특별시 강남구 역삼로 17길 64, 4층(역삼동, 제스빌딩) (우 : 06237) <br>
+                    팩스 : 02-568-4908  | <br>
+                    통신판매업 신고번호 : 제2021-서울강남-06358호 <br>
+                    서비스 이용문의 : 1661-8734  |  이메일 : <a href="#">cs@zigbang.com</a> |  서비스제휴문의 : <a href="#">partnership@zigbang.com</a> 
+                </div>
+                <p class="footer-icon">
+                    <a href="#">
+                        <img src="https://s.zigbang.com/v1/web/common/ico_t2_sns1.png" alt="페이스북" style="width: 34px;">
+                    </a>
+                    <a href="#">
+                        <img src="https://s.zigbang.com/v1/web/common/ico_sns_youtube.png" alt="유튜브" style="width: 34px;">
+                    </a>
+                    <a href="#">
+                        <img src="https://s.zigbang.com/v1/web/common/ico_sns_blog.png" alt="네이버블로그" style="width: 34px;">
+                    </a>
+                    <a href="#">
+                        <img src="https://s.zigbang.com/v1/web/common/ico_t2_sns4.png" alt="네이버포스트" style="width: 34px;">
+                    </a>
+                </p>
+                <div class="copyright">Copyright © ZIGBANG. All Rights Reserved.</div>
+         </div>
+        </footer>
+    </div>
+</body>
+</html>

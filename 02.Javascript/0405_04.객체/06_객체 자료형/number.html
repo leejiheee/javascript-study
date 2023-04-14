@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>number.html</title>
+</head>
+<body>
+    <script>
+        let str = '1';
+        let num = 5.292930;
+        let m = Number('숫자로 변환할 수 없는');
+
+
+        console.log(Number(str));
+
+        //toFixed: 소수점 나타내기 (0이라고 하면 정수만 출력)
+        console.log(num.toFixed(2));
+
+        //m이 숫자인지 아닌지 판단하기
+        console.log(Number.isNaN(m)); //is this Nan?
+
+        //유한한 숫자인지 판단하기
+        const n = 10/0;
+        console.log(Number.isFinite(n)); //is this Finite?
+    </script>
+</body>
+</html>

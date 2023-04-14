@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid-1.html</title>
+    <style>
+        #wrapper {
+            display: grid;
+
+            /* 너비가 같은 컬럼 3개를 반복 */
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: minmax(100px, auto);
+        }
+
+        .items {
+            padding: 10px;
+            background-color: #eee;
+        }
+
+        /* odd는 홀수 */
+        .items:nth-child(odd){
+            background-color: #bbb;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+        <div class="items">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem dolorum error repudiandae cumque dolore? Similique, molestiae distinctio maiores consequuntur beatae earum amet dolore iure necessitatibus ex dolorum assumenda sint obcaecati.</div>
+        <div class="items">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem dolorum error repudiandae cumque dolore? Similique, molestiae distinctio maiores consequuntur beatae earum amet dolore iure necessitatibus </div>
+        <div class="items">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem dolorum error repudiandae cumque dolore? Similique, molestiae distinctio maiores consequuntur beatae earum amet dolore  </div>
+        <div class="items">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem dolorum error repudiandae cumque dolore? Similique, molestiae distinctio maiores consequuntur beatae</div>
+        <div class="items">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem dolorum error </div>
+        <div class="items">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hard1.html</title>
+</head>
+<body>
+    <script>
+      const a = Number(prompt("숫자를 입력하시오."));
+      const b = Number(prompt("숫자를 입력하시오."));
+
+      function add (a, b) {
+        const sum = (a + b);
+        return sum;
+      }
+
+      function sub (a, b) {
+        const minus = (a - b);
+        return minus;
+      }
+
+      function division (a, b) {
+        const over = (a / b);
+        return over;
+      }
+
+      function multiple (a, b) {
+        const multi = (a * b);
+        return multi;
+      }
+
+      let number = add (a, b);
+      alert(`두 값의 더하면 ${number}`);
+
+      let number2 = sub (a, b);
+      alert(`두 값을 빼면 ${number2}`);
+
+      let number3 = division (a, b);
+      alert(`두 값을 나누면 ${number3}`);
+
+      let number4 = multiple (a, b);
+      alert(`두 값을 곱하면 ${number4}`);
+
+    </script>
+</body>
+</html>

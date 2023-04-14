@@ -1,0 +1,488 @@
+@charset "utf-8";
+
+ @import url('//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css');
+ .spoka * { font-family: 'Spoqa Han Sans', 'Spoqa Han Sans JP', 'Sans-serif'; }
+
+
+/* 초기화 태그 */
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 0.9em !important;
+}
+
+ul {
+    list-style: none;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+a {
+    color: black !important;
+    text-decoration: none !important;
+    cursor: pointer;
+    font-family: 'Spoqa Han Sans';
+}
+
+.wrap {
+    overflow: hidden;
+    min-width: 1200px;
+}
+
+/* 헤더 */
+
+header {
+    width: 100%;
+  
+    position: fixed;
+    border-bottom: 1px solid rgb(209, 209, 209);
+    background-color: white;
+    z-index: 999;
+    position: fixed;
+}
+
+.header-left {
+    width: 1390px;
+}
+
+nav {
+    width: 2000px;
+    height: 80px;
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: 0;
+}
+
+.nav__menu > li {
+    /* 수평 정렬 */
+    display: inline-block;
+    padding: 20px;
+    position: relative;
+    top: 0;
+}
+
+.w1 {display: block; font-size: 17px; font-weight: bold;}
+.w2 {display: block; font-size: 12px;}
+
+.nav__menu li:hover .w1 , .nav__menu li:hover .w2{
+    color: rgb(255, 104, 27);
+}
+
+.sub-menu {
+    /* 안보이게 함 */
+    display: none;
+    width: 200px;
+    background-color: white;
+    border: 1px solid rgb(209, 209, 209);
+    position: absolute;
+    top: 80px;
+}
+
+.nav__menu > li:hover .sub-menu {
+    display: block;
+}
+
+.sub-menu > li {
+    padding: 10px;
+}
+
+.sub-menu > li:hover {
+    background-color: #e6e6e6;
+}
+
+.btn-login {
+    display: flex;
+    align-items: center;
+    padding-right: 20px;
+}
+.header-btn {
+    width: 106px;
+    height: 30px;
+    font-size: 11px;
+    border: 0.5px solid rgb(218, 218, 218);
+    border-radius: 4px;
+    background-color: rgb(238, 238, 238);
+    font-family: 'Spoqa Han Sans';
+    white-space: nowrap;
+}
+
+.header-btn:hover {
+    background-color: #e6e6e6;
+}
+
+.header-right {
+    display: flex;
+}
+
+.header-img {
+    padding: 21px 21px 20px 20px;
+}
+
+.header-img:hover {
+    background-color: #e6e6e6;
+}
+
+.header-img img {
+    width: 126px;
+    height: 38px;
+}
+
+/* 메인 */
+
+
+.main {
+    margin: 0 auto;
+}
+
+.banner-1 {
+    height: 540px;
+    width: 1920px;
+    background-image: linear-gradient( rgba(0, 0, 0, 0.041), rgba(0, 0, 0, 0.151) ), url(../images/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.banner-1__text {
+    width: 100%;
+    padding-top: 230px;
+    margin: 0 auto;
+    
+}
+
+.banner-1__text div {
+    width: 684px;
+    height: 46px;
+    color: white;
+    font-size: 40px;
+    font-weight: 900;
+    text-align: center;
+    margin: 0 auto;
+    line-height: 1.15;
+    text-shadow: rgb(255, 255, 255) 0px 16px 40px;
+    font-family: 'Spoqa Han Sans';
+}
+
+.banner-2 {
+    margin: 0 auto;
+    width: 580px;
+    margin-top: 50px;
+}
+
+.nav-pills {
+    display: flex;
+    justify-content: space-between;
+    height: 40px;
+    background-color: rgba(3, 20, 45, 0.85);
+    border-radius: 8px;
+    margin-bottom: 26px;
+}
+
+.nav-item {
+    width: 110px;
+}
+
+.nav-item .active {
+    height: 48px;
+    background-image: url(https://s.zigbang.com/v1/web/main/select_bubble.png) !important;
+    background-size: cover;
+    background-color:transparent !important;
+    color: rgb(5, 55, 45) !important;
+    font-size: 17px !important;
+    text-align: center;
+    padding-top: 8px !important;
+    font-weight: bold;
+}
+
+.nav-link {
+    color: #fff !important;
+    font-size: 17px !important;
+    text-align: center;
+    padding: 8px !important;
+}
+
+.input-group {
+    margin-top: 30px;
+    border-radius: 8px;
+}
+
+.form-control {
+    height: 60px;
+    font-size: 16px;
+    padding: 19px 28px 19px 29px !important;
+    background-color: rgba(242,242,242,1.00) !important;
+}
+
+.form-control::placeholder {
+    color: #b8b8b8 !important;
+    font-family: 'Spoqa Han Sans' !important;
+}
+
+#basic-addon2 {
+    cursor: pointer;
+    background-color: rgb(255, 104, 27);
+    width: 66px;
+    height: 60px;
+    border: none;
+}
+
+#basic-addon2:hover {
+    background-color: rgb(214, 94, 33);
+}
+
+.contents-area {
+    width: 1920px;
+    padding: 40px 0px;
+}
+
+.contents {
+    width: 840px;
+    margin: 0 auto;
+    display: flex;
+    box-sizing: border-box;
+}
+
+.contents__hi {
+    width: 260px;
+    height: 205px;
+}
+
+.contents__hi div:nth-child(1){
+    border-bottom: 1px solid rgb(214, 214, 214);
+    padding: 4px 0px 11px 0px;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 20px;
+    font-family: 'Spoqa Han Sans';
+}
+
+.contents__hi div:nth-child(2) {
+    margin-top: 20px;
+}
+
+.contents__hi div:nth-child(2) img {
+    width: 260px;
+    height: 140px;
+    cursor: pointer;
+}
+
+.contents__news {
+    width: 260px;
+    height: 205px;
+    margin-left: 30px;
+}
+
+.news__title {
+    border-bottom: 1px solid rgb(214, 214, 214);
+    padding: 4px 0px 11px 0px;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 20px;
+    display: flex;
+    width: 260px;
+    height: 36px;
+    box-sizing: border-box;
+}
+
+.title__right {
+    width: 60px;
+    height: 30px;
+    background-color: rgb(238, 238, 238);
+    border: none;
+    border-radius: 4px;
+    display: flex;
+    font-size: 12px;
+    color: rgb(116, 116, 116);
+    font-weight: 400;
+    align-items: center;
+    bottom: 5px;
+    padding-left: 13px;
+    position: relative;
+    cursor: pointer;
+}
+
+.title__right:hover {
+    background-color: #e6e6e6;
+}
+
+.news__list {
+    margin-top: 8px;
+}
+
+.news__list div div {
+    height: 32px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.news__list div div p {
+    font-size: 12px;
+    font-weight: 500;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 260px;
+    font-family: 'Spoqa Han Sans';
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.news__list div div:hover {
+    background-color: #f5f5f5;
+}
+
+.contents__notice {
+    width: 260px;
+    height: 205px;
+    margin-left: 30px;
+
+}
+
+.notice__title {
+    border-bottom: 1px solid rgb(214, 214, 214);
+    padding: 4px 0px 11px 0px;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 20px;
+    display: flex;
+    width: 260px;
+    height: 36px;
+    box-sizing: border-box;
+}
+
+.notice__list {
+    margin-top: 8px;
+}
+
+.notice__list div div {
+    height: 32px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.notice__list div div:hover {
+    background-color: #f5f5f5;
+}
+
+.notice__list div div p {
+    font-size: 12px;
+    font-weight: 500;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 260px;
+    font-family: 'Spoqa Han Sans';
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.app-area {
+    width: 1920px;
+    height: 279px;
+    background-color: rgba(243,245,245,1.00);
+}
+
+.app__contents {
+    width: 750px;
+    height: 279px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.app__contents img {
+    width: 370px;
+    display: flex;
+    justify-content: flex-end;
+    width: 240px;
+}
+
+.app__right h2 {
+    font-size: 17px;
+    font-weight: 900;
+    margin-bottom: 40px;
+    margin-left: 4px;
+    margin-top: 101px;
+    font-family: 'Spoqa Han Sans';
+}
+
+.app__btn {
+    display: flex;
+    width: 400px;
+    justify-content: space-between;
+}
+
+.app__btn div:nth-child(1) {
+    background-image: url(https://s.zigbang.com/legacy/images/v2/main/BTN_download_android_nor.png);
+    background-size: contain;
+    cursor: pointer;
+    height: 52px;
+    width: 190px;
+}
+
+.app__btn div:nth-child(1):hover {
+    filter: brightness(85%);
+}
+
+.app__btn div:nth-child(2) {
+    background-image: url(https://s.zigbang.com/legacy/images/v2/main/BTN_download_ios_nor.png);
+    background-size: contain;
+    cursor: pointer;
+    height: 52px;
+    width: 190px;
+}
+
+.app__btn div:nth-child(2):hover {
+    filter: brightness(85%);
+}
+
+
+/* 푸터 */
+
+footer {
+    width: 1920px;
+    height: 370px;
+    padding: 52px 0 20px;
+}
+
+.footer-area {
+    width: 600px;
+    margin: 0 auto;
+}
+
+.footer-area p {
+    margin: 0 auto;
+    font-size: 12px;
+    padding-bottom: 20px;
+    white-space: nowrap;
+}
+
+.footer-area p:nth-child(1) a {
+    padding: 0 4px;
+    line-height: 1.3;
+}
+
+.footer-bottom {
+    font-size: 12px;
+    text-align: center;
+    font-family: 'Spoqa Han Sans';
+}
+
+.footer-icon {
+    padding: 24px 0px 13px;
+    text-align: center;
+}
+
+.footer-icon a {
+    margin-right: 12px;
+}
+
+.copyright {
+    text-align: center;
+    color: rgb(166, 166, 166);
+    font-family: 'Spoqa Han Sans';
+    font-size: 12px;
+}
