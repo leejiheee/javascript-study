@@ -89,6 +89,7 @@
                   class="form-control"
                   aria-labelledby="passwordHelpBlock"
                   placeholder="년(4자)"
+                  maxlength="4"
                 />
               </div>
               <div class="birth__m">
@@ -101,6 +102,15 @@
                   <option value="1">1</option>
                   <option value="2">2</option>
                   <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="6">6</option>
+                  <option value="7">7</option>
+                  <option value="8">8</option>
+                  <option value="9">9</option>
+                  <option value="10">10</option>
+                  <option value="11">11</option>
+                  <option value="12">12</option>
                 </select>
               </div>
               <div class="birth__d">
@@ -121,14 +131,14 @@
               class="form-select"
               aria-label="Default select example"
             >
-              <option selected>성별</option>
+              <option selected disabled>성별</option>
               <option value="man">남자</option>
               <option value="woman">여자</option>
               <option value="nogender">선택안함</option>
             </select>
           </div>
           <div class="email input">
-            <label for="inputEmail" class="form-label">본인확인 이메일</label>
+            <label for="inputEmail" class="form-label">본인확인 이메일</label><span style="font-size: 12px; font-weight: 200; color: rgb(156, 156, 156); margin-left: 5px;">(선택)</span>
             <input
               type="email"
               id="inputEmail"
