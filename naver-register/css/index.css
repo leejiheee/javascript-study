@@ -1,0 +1,196 @@
+@charset "utf-8";
+
+/* 헤더 */
+
+header h1 {
+  padding: 60px 0 20px;
+}
+
+header h1 a {
+  display: block;
+  background-image: url(https://static.nid.naver.com/images/ui/join/m_naver_logo_20191126.png);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: 240px auto;
+  width: 240px;
+  height: 44px;
+  margin: 0 auto;
+}
+
+/* 메인 */
+
+body {
+  background: #f5f6f7;
+}
+
+.wrap {
+  margin: 0 auto;
+}
+
+.container {
+  margin: 0 auto;
+  width: 768px;
+}
+
+.id {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.input {
+  font-size: 14px;
+  font-weight: bold;
+  margin: 19px auto 19px;
+  width: 460px;
+}
+
+#inputId {
+  width: 460px;
+  height: 51px;
+}
+
+#inputId::placeholder {
+  text-align: right;
+}
+
+#inputPwd {
+  width: 460px;
+  height: 51px;
+}
+
+#inputPwd2 {
+  width: 460px;
+  height: 51px;
+}
+
+#inputName {
+  width: 460px;
+  height: 51px;
+}
+
+.birth__input {
+  display: flex;
+  margin-top: 10px;
+}
+
+#inputYear {
+  width: 147px;
+  height: 51px;
+}
+
+#inputMonth {
+  width: 147px;
+  height: 51px;
+}
+
+#inputDay {
+  width: 147px;
+  height: 51px;
+}
+
+.birth__m {
+  margin: 0 10px;
+}
+
+#month {
+  width: 147px;
+  height: 51px;
+}
+
+#gender {
+  width: 460px;
+  height: 51px;
+  margin-top: 10px;
+}
+
+#inputEmail {
+  width: 460px;
+  height: 51px;
+}
+
+#num {
+  width: 460px;
+  height: 51px;
+  margin-top: 10px;
+}
+
+#inputNum {
+  width: 335px;
+  height: 51px;
+  margin-top: 10px;
+}
+
+.btn-success {
+  width: 115px;
+  height: 51px;
+  margin-top: 10px;
+  margin-left: 10px;
+  background-color: #03c75a !important;
+  border: none !important;
+  white-space: nowrap;
+  font-size: 13.5px !important;
+}
+
+.phone__num {
+  display: flex;
+}
+
+#inputNum2 {
+  width: 460px;
+  height: 51px;
+  margin-top: 10px;
+}
+
+.btn-primary {
+  width: 460px;
+  height: 53px;
+  background-color: #03c75a !important;
+  border: none !important;
+  margin: 30px 0 9px;
+}
+
+.register {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
+/* 푸터 */
+
+.footer_area1 {
+  font-size: 12px;
+  padding: 30px 0 15px;
+}
+
+.footer__txt {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
+.footer__txt a {
+  font-size: 12px;
+  color: #000 !important;
+  font-style: none;
+  text-decoration: none;
+  margin: 0 8px;
+}
+
+.footer_area2 {
+  display: flex;
+  justify-content: center;
+}
+
+.footer_area2 p a {
+  position: relative;
+  display: inline-block;
+  width: 63px;
+  height: 12px;
+  background: url(https://static.nid.naver.com/images/ui/login/pc_sp_login_190522.png)
+    no-repeat;
+  background-position: -242px 0;
+  background-size: 460px auto;
+}
+.footer_area2 p {
+  font-size: 10px;
+}

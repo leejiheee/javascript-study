@@ -160,7 +160,7 @@
   function getWeatherWithCity(city) {
     var temp = {};
     var urlAPI =
-      "https://api.openweathermap.org/data/2.5/weather?appid=8886786042db573540e91b7ebc8bba46&units=metric&lang=kr";
+      "https://api.openweathermap.org/data/2.5/weather?appid=8886786042db573540e91b7ebc8bba46&units=metric&lang=kr&lat=37.44957&lon=126.71542";
     urlAPI += "&q=" + city;
 
     $.ajax({
