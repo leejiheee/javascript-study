@@ -21,18 +21,19 @@
   
         console.log(id);
   
-        const movieURL = `https://api.themoviedb.org/3/movie/502356/credits?api_key=8d72a0a798470ff73199d44821ebb6cd&language=ko-KR`;
+        const movieURL = `https://api.themoviedb.org/3/movie/${id}/credits?api_key=8d72a0a798470ff73199d44821ebb6cd&language=ko-KR`;
         $.ajax({
           type: "GET",
           url: movieURL,
           dataType: "json",
           async: false,
           success: function (data) {
-            const cast = data.cast.slice([0],[10]);
+            const cast = data.cast;
 
-            console.log("전체 data:", data);
-            console.log(data.cast);
-            console.log(cast);
+            for(let i = 0; i < 10; i++) {
+               console.log(cast[i].name);
+                }
+
         
           },
           error: function (request, status, error) {
