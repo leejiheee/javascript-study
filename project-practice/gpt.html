@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+    <script>
+        // '슈퍼마리오 브라더스'의 정보를 가져오는 함수
+async function fetchMovieDetails() {
+  const response = await fetch('https://api.themoviedb.org/3/movie/433498?api_key=8d72a0a798470ff73199d44821ebb6cd');
+  const data = await response.json();
+  return data.credits.cast;
+}
+
+// fetchMovieDetails 함수를 호출하여 출연진 정보를 가져오고, 
+// 상위 10명의 배우 이름을 콘솔에 출력하는 함수
+async function printTop10Actors() {
+  const cast = await fetchMovieDetails();
+  for (let i = 0; i < 10; i++) {
+    console.log(cast[i].name);
+  }
+}
+
+// printTop10Actors 함수를 호출하여 상위 10명의 배우 이름을 콘솔에 출력
+printTop10Actors();
+    </script>
+</body>
+</html>
